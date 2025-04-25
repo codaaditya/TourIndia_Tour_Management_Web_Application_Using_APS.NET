@@ -1,0 +1,396 @@
+﻿/*package styling*/
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.text{
+   
+    margin-top: 50px;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+    .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+/* Header */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 80px; /* Adjust for fixed navbar */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Package Container */
+.package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Package Card */
+.package-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+    .package-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Package Image */
+    .package-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+/* Package Icons */
+.package-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+    .package-icons i {
+        color: #28a745;
+        margin-right: 5px;
+    }
+
+/* Package Content */
+.package-content {
+    padding: 15px;
+}
+
+.package-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.package-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Package Footer */
+.package-footer {
+    padding: 15px;
+    background: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .package-footer span {
+        color: #333;
+    }
+
+/* Select Button */
+.select-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+    .select-btn:hover {
+        background: #218838;
+    }
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background: #222;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.footer a {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/*Pagination style*/
+.pagination-controls {
+    margin-top: 15px;
+    text-align: center;
+}
+
+    .pagination-controls .page-info {
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    .pagination-controls button {
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .pagination-controls button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .pagination-controls button:hover:not(:disabled) {
+            background-color: #45a049;
+        }
+
+
+/*package Detaails page styling*/
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.package-details-container {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Package Box */
+.package-box {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+    .package-box:hover {
+        transform: translateY(-5px);
+    }
+
+/* Package Image */
+.package-image {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+    .package-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+/* Package Header */
+.package-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+    .package-header h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5733;
+}
+
+.reviews {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Package Description */
+.package-description {
+    text-align: justify;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Package Info */
+.package-info {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+    .package-info p {
+        margin: 5px 0;
+        font-weight: 500;
+    }
+
+/* Book Now Button */
+.book-btn {
+    display: block;
+    text-align: center;
+    background: linear-gradient(45deg, #ff5733, #ff914d);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .book-btn:hover {
+        background: linear-gradient(45deg, #ff914d, #ff5733);
+        transform: scale(1.05);
+    }
+
+
+    /*contact dropdown*/
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ensure smooth dropdown behavior */
+.dropdown-menu {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/*add to cart button*/
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #28a745, #2ecc71); /* Green gradient */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 0;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    cursor: pointer;
+    gap: 8px; /* Adds space between text and image */
+}
+
+    .add-btn img {
+        width: 20px; /* Adjust image size */
+        height: 20px;
+    }
+
+    .add-btn:hover {
+        background: linear-gradient(45deg, #218838, #27ae60); /* Darker green on hover */
+        transform: scale(1.05);
+    }
+
+    .add-btn:active {
+        transform: scale(0.95);
+    }
+
+

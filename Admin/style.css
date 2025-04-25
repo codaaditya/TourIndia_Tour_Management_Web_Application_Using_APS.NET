@@ -1,0 +1,302 @@
+﻿/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 20px;
+    color: #333;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+    /* Labels */
+    .form-container label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: 600;
+        color: #555;
+    }
+
+/* Input Fields */
+.input-field,
+.dropdown,
+.file-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+    .input-field:focus,
+    .dropdown:focus,
+    .file-input:focus {
+        border-color: #4CAF50;
+        outline: none;
+    }
+
+/* Buttons */
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+    .btn:hover {
+        background-color: #45a049;
+    }
+
+/* Success/Error Message */
+#Message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* GridView Styling */
+#GridView1 {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+    /* Table Headers */
+    #GridView1 th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid #ddd;
+    }
+
+    /* Table Rows */
+    #GridView1 td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #GridView1 tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    #GridView1 tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Action Buttons */
+    #GridView1 a {
+        color: #4CAF50;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+        #GridView1 a:hover {
+            color: #45a049;
+        }
+
+    /* Image Styling */
+    #GridView1 img {
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .form-container {
+        width: 100%;
+    }
+
+    #GridView1 th,
+    #GridView1 td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+/*Add Package Category*/
+
+/* 🔹 Container Styling */
+.add-category {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Label Styling */
+.category-label {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* General TextBox Styling */
+input[type="text"],
+textarea,
+select {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for better touch area */
+    margin: 8px 0; /* Margin for spacing */
+    display: inline-block;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 6px; /* Rounded corners */
+    box-sizing: border-box; /* Consistent sizing */
+    font-size: 16px; /* Readable font size */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    /* Focus Style */
+    input[type="text"]:focus {
+        border-color: #4CAF50; /* Green border on focus */
+        box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Light green glow */
+        outline: none;
+    }
+
+    /* Hover Effect */
+    input[type="text"]:hover {
+        border-color: #45a049;
+    }
+
+
+
+/* 🔹 Button Styling */
+.category-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+    /* 🔹 Hover and Focus Effect for Button */
+    .category-button:hover {
+        background-color: #4CAF50;
+    }
+
+    .category-button:focus {
+        outline: none;
+        box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+    }
+
+/* 🔹 Responsive Design */
+@media (max-width: 480px) {
+    .add-category {
+        padding: 20px;
+    }
+
+    .category-label,
+    .category-dropdown,
+    .category-button {
+        font-size: 14px;
+    }
+}
+
+/*Style for cart page*/
+.gridview-container {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .gridview-container th {
+        background-color: #004080;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .gridview-container td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    .gridview-container tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .gridview-container tr:hover {
+        background-color: #cce5ff;
+        transition: 0.3s;
+    }
+
+    .gridview-container label {
+        font-weight: bold;
+        color: #333;
+    }
+
+
+    /*message style*/
+
+.gridview-container {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+    .gridview-container th {
+        background-color: #004080;
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .gridview-container td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    .gridview-container tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    .gridview-container tr:hover {
+        background-color: #cce5ff;
+        transition: 0.3s;
+    }
+
+    .gridview-container label {
+        font-weight: bold;
+        color: #333;
+    }

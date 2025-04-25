@@ -1,0 +1,1 @@
+﻿ALTER TABLE addtocart ADD TourDate NVARCHAR(MAX) NULL;

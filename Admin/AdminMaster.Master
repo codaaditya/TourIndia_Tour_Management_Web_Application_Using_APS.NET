@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="WebApplication11.Admin.AdminMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server">Admin Dashboard</asp:ContentPlaceHolder></title>
+     <link rel="stylesheet" type="text/css" href="styles.css" />
+     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="reg.css" />-->
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="Dashboard.aspx">Dashboard</a></li>
+                <li><a href="Addpackages.aspx">Add Packages</a></li>
+                <li><a href="AddCategory.aspx">Add Package Types</a></li>
+                <li><a href="BookingDetails.aspx">Bookings</a></li>
+                <li><a href="ViewUsers.aspx">View Users</a></li>
+                <li><a href="ManagePackages.aspx">Manage Packages</a></li>
+                <li><a href="ViewCart.aspx">View Cart</a></li>
+                <li><a href="ContactMesg.aspx">ContactMessage</a></li>
+                <li><a href="FeedBack.aspx">View FeedBack</a></li>
+                <li><a href="AdminRegister.aspx">Register</a></li>
+                <li><a href="Admin.aspx">Login</a></li>
+
+                <asp:Button ID="btnLogout" runat="server" Text="Logout" BorderStyle="None" Font-Size="20px" ForeColor="White" BackColor="#2c3e50" Width="150" Height="50" OnClick="btnLogout_Click" />
+
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="navbar">
+                <h3>Admin Dashboard</h3>
+                <asp:Label ID="txtAdmin" runat="server" Text=""></asp:Label>
+                <!--<div class="profile">
+                    <img src="profile.jpg" alt="Admin Profile">
+                    <span>Aditya</span>
+                </div>-->
+            </div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
